@@ -109,7 +109,30 @@ password: janedoe
 }
 ```
 
+## Running Application
 
+To start the application 'RUN.sh':
+
+```sh
+sh RUN.sh
+```
+OR
+
+```sh
+bash RUN.sh
+```
+
+Another option is set executable permission using chmod command:
+
+```sh
+chmod +x RUN.sh
+```
+
+Now run .sh file as follows:
+
+```sh
+./file.sh
+```
 
 ### Author
 **Olajide Bolaji 'Nuel** - Software Developer at Andela
