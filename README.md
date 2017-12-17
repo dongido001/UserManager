@@ -109,9 +109,9 @@ password: janedoe
 }
 ```
 
-## Running Application
+## Serving the Application with Docker :fire: :fire:
 
-To start the application 'RUN.sh':
+To start the Server, run 'RUN.sh':
 
 ```sh
 sh RUN.sh
@@ -131,8 +131,10 @@ chmod +x RUN.sh
 Now run .sh file as follows:
 
 ```sh
-./file.sh
+./RUN.sh
 ```
+
+Now visit, [localhost:3000](localhost:3000)
 
 ### Author
 **Olajide Bolaji 'Nuel** - Software Developer at Andela
