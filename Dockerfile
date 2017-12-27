@@ -1,17 +1,15 @@
 FROM node:7
 
-# Create app directory
-WORKDIR /usr/src/lob
+# Create the location of our app within the image
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
 
-# Install app dependencies
-# A wildcard is used to ensure both package.json AND package-lock.json are copied
-# where available (npm@5+)
-COPY package*.json ./
-
+# Copy the package json containing dependencies, then install
+COPY package.json /usr/src/app/
 RUN npm install
 
-# Bundle app source
-COPY . .
+# Copy the current source to the image
+COPY . /usr/src/app
 
-EXPOSE 3000
-CMD [ "npm", "start" ]
+# Start the service
+ENTRYPOINT ["npm", "start"]

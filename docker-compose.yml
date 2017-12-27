@@ -3,7 +3,8 @@ services:
   web:
     build: .
     volumes:
-      - ./:/usr/src/lob
+      - ./:/usr/src/app
+      - /app/node_modules
     ports:
       - "3000:3000"
     links:
